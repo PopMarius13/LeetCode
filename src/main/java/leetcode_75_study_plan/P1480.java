@@ -1,3 +1,5 @@
+package leetcode_75_study_plan;
+
 import java.util.Arrays;
 
 public class P1480 {

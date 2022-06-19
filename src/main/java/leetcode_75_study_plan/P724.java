@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package leetcode_75_study_plan;
 
 public class P724 {
 
