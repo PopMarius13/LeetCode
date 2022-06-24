@@ -2,35 +2,27 @@ package daily_challenge;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.PriorityQueue;
 
 public class P630 {
 
     class Solution {
         public int scheduleCourse(int[][] courses) {
-
-            int[] diff = new int[courses.length];
-            int k = 0;
-            for(int i = 0; i < courses.length; i++) {
-                int d = courses[i][1] - courses[i][0];
-                if(d >= 0) {
-                    diff[k++] = d;
+            Arrays.sort(courses, (a,b)->(a[1]-b[1]));
+            PriorityQueue<int[]> q = new PriorityQueue<>((a, b)->b[0]-a[0]);
+            int time = 0;
+            for (int[] c : courses) {
+                int duration = c[0];
+                int lastDay = c[1];
+                if (time + duration <= lastDay) {
+                    time += duration;
+                    q.offer(c);
+                } else if (!q.isEmpty() && q.peek()[0] > duration) {
+                    time = time - q.poll()[0] + duration;
+                    q.offer(c);
                 }
             }
-            System.out.println(Arrays.toString(diff));
-
-            Arrays.sort(diff);
-            int sum = 0, ans = 0;
-            for(int i = 0; i < diff.length; i++) {
-                if(diff[i] - sum > 0) {
-                    sum += diff[i];
-                    ans++;
-                } else {
-                    return ans;
-                }
-            }
-            return ans;
-
+            return q.size();
         }
-
     }
 }
