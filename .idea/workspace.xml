@@ -51,13 +51,26 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.P392">
+  <component name="RunManager" selected="Application.P315">
     <configuration name="P205" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode_75_study_plan.P205" />
       <module name="Leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode_75_study_plan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="P315" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="daily_challenge.P315" />
+      <module name="Leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daily_challenge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,13 +98,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_75_study_plan.P1480" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode_75_study_plan.P1480" />
-      <module name="Leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="leetcode_75_study_plan.P724" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode_75_study_plan.P724" />
       <module name="Leetcode" />
@@ -101,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.P315" />
         <item itemvalue="Application.P392" />
         <item itemvalue="Application.P205" />
         <item itemvalue="Application.days_14_study_plan.P704" />
         <item itemvalue="Application.leetcode_75_study_plan.P724" />
-        <item itemvalue="Application.leetcode_75_study_plan.P1480" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +134,8 @@
       <workItem from="1656342026519" duration="1356000" />
       <workItem from="1656421545944" duration="5339000" />
       <workItem from="1657569293135" duration="2862000" />
+      <workItem from="1658146569223" duration="2243000" />
+      <workItem from="1658608949732" duration="10487000" />
     </task>
     <servers />
   </component>
