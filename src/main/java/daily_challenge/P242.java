@@ -3,7 +3,7 @@ package daily_challenge;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P424 {
+public class P242 {
 
     class Solution {
         public boolean isAnagram(String s, String t) {
