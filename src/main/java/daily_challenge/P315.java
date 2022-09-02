@@ -1,6 +1,6 @@
 package daily_challenge;
 
-import java.util.*;
+import java.util.;
 
 public class P315 {
 
@@ -30,11 +30,11 @@ public class P315 {
 
     static class Solution1 {
 
-        private int size = 2 * 10000 + 1;
+        private int size = 2  10000 + 1;
         private int offset = 10000;
         public List<Integer> countSmaller(int[] nums) {
             int n = nums.length - 1;
-            int[] tree = new int[size * 2]; // 20002 - 40002 -> interval 1 (all numbers), 10001 - 20001 -> interval 2
+            int[] tree = new int[size  2]; // 20002 - 40002 -> interval 1 (all numbers), 10001 - 20001 -> interval 2
             List<Integer> result = new LinkedList<>();
 
             for(int i = n; i >= 0; i--) {
@@ -76,7 +76,7 @@ public class P315 {
 
             while(index > 1) {
                 index /= 2;
-                tree[index] = tree[index * 2] + tree[index * 2 + 1];
+                tree[index] = tree[index  2] + tree[index  2 + 1];
                 System.out.println(index + " --- " + tree[index]);
             }
         }
@@ -85,7 +85,7 @@ public class P315 {
 
     static class Solution2 {
         private int offset = 10000;
-        private int size = 2 * 10000 + 2;
+        private int size = 2  10000 + 2;
         private int[] tree = new int[size];
 
         public List<Integer> countSmaller(int[] nums) {

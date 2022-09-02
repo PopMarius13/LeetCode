@@ -1,6 +1,6 @@
 package leetcode_75_study_plan;
 
-import java.util.*;
+import java.util.;
 
 public class P205 {
 

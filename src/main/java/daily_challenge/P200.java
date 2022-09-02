@@ -1,7 +1,7 @@
 package daily_challenge;
 
 import java.lang.reflect.Array;
-import java.util.*;
+import java.util.;
 
 public class P200 {
     class Solution {

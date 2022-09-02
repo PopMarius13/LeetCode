@@ -1,6 +1,6 @@
 package daily_challenge;
 
-import java.util.*;
+import java.util.;
 
 public class P1647 {
 

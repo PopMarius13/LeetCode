@@ -20,21 +20,21 @@ public class P977 {
             index = 0;
             while(left >= 0 && right < nums.length) {
                 if(-nums[left] < nums[right]) {
-                    ans[index++] = nums[left] * nums[left];
+                    ans[index++] = nums[left]  nums[left];
                     left--;
                 } else {
-                    ans[index++] = nums[right] * nums[right];
+                    ans[index++] = nums[right]  nums[right];
                     right++;
                 }
             }
             System.out.println(Arrays.toString(ans));
             while(left >= 0) {
-                ans[index++] = nums[left] * nums[left];
+                ans[index++] = nums[left]  nums[left];
                 left--;
             }
 
             while(right <= nums.length) {
-                ans[index++] = nums[right] * nums[right];
+                ans[index++] = nums[right]  nums[right];
                 right++;
             }
 
